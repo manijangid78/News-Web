@@ -1,0 +1,22 @@
+<%- include("header"); -%>
+
+<body>
+    <div class="container">
+      <div class="row">
+        <% for(var i=0; i<12; i++){ %>
+              <div class="col-lg-3 col-md-6 col-sm-12 newsBlock">
+                <div class="card">
+                  <img class="card-img-top" src="<%= news.articles[i].urlToImage %>" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><%= news.articles[i].title %></h5>
+                    <p class="card-text"><%= news.articles[i].description %></p>
+                  </div>
+                </div>
+              </div>
+        <% } %>
+      </div>
+    </div>
+</body>
+
+</html>
+<!-- https://github.com/manijangid78/News-Web.git -->
